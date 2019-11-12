@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+/ * Dispositivos medianos (computadoras de escritorio, 992 px y superiores) * /
+@media (ancho mínimo: 992 px) y (ancho máximo: 1199 px) {
+    / * PÁGINA ENVOLVENTE DE FONDO BLANCO INTERIOR * /
+    .inner-wrapper {
+        ancho: 98%;
+    }
+    
+    / * CAJA DE SERVICIO * /
+    .services-box span.icon {
+        margen inferior: 20px;
+    }
+    
+    / * TABLA DE PROGRESO * /
+    .our-progress {
+        ancho: 172px;
+    }
+    
+    # donutchart1,
+    # donutchart2,
+    # donutchart3,
+    # donutchart4,
+    # donutchart5 {
+        margen izquierdo: 15 px;
+    }
+    
+    / * ANCHO DE LA RED DE LA CARTERA * /
+    .grid li {
+        ancho: 230px;
+    }
+    
+    / * CAJA DE FUNCIONES SUPERIOR DERECHA * /
+    # showcase-content1 {
+        margen inferior: 10px;
+    }
+    
+    .característica {
+        altura: 155 px;
+    }
+    
+    .feature-green {
+        acolchado: 17px 21px 9px 12px;
+    }
+    
+    .feature-blue {
+        acolchado: 7px;
+    }
+    
+    .feature-blue .b-light-text {
+        tamaño de fuente: 25px;
+    }
+    
+    .feature-green .b-light-text {
+        tamaño de fuente: 16px;
+    }
+    
+    .feature-blue .s-light-text {
+        tamaño de fuente: 14px;
+        peso de fuente: 300;
+    }
+    
+    .feature-green .s-light-text {
+        tamaño de fuente: 16px;
+    }
+    
+    .feature-blue .m-bold-text {
+        tamaño de fuente: 24px;
+    }
+    
+    / * TAB * /
+    .nav> li> a {
+        acolchado: 10px 5px;
+    }
+    
+    / * CARRUSEL MEGAMENU * /
+    #myCarousel a.right i {
+        arriba: 23%;
+        izquierda: -4px;
+    }
+    
+    #myCarousel a.left i {
+        arriba: 24%;
+        izquierda: 3px;
+    }
+    
+    / * PROYECTO HOGAR RECIENTE * /
+    .portfolio-content .grid-block figure {
+        ancho: 30,9%;
+    }
+    
+    .portfolio-content .grid-block figure: nth-child (3n + 3) {
+        margen derecho: 0;
+    }
+}
+
+
+
+@media(max-width: 300px){
+	header .carousel-caption{
+		left: 20%;
+	}
+}
+
+.container{
+	display:flex; 
+	with: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin:auto:
+	
+}
+
+.galeria__ima{
+	width: 90px;
+	height : 180px;
+	margin-botton: 30px;
+	object-fit: cover;
+	filter:brightness(70%);
+	animation:escalar 1.5s;
+
+}
+
+.galeria__ima: hover {
+	filter:brightness(100%);	
+	
+}
+

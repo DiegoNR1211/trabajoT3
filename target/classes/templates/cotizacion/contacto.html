@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+	<header th:replace="layout/layout :: header"></header>
+
+	<div class="container">
+
+		<h1>Cotizacion</h1>
+
+		<div class="card text-center">
+			<div class="card-header">Cotizacion</div>
+			<div class="card-body">
+				
+				<div th:if="${dangerDel}" class="alert alert-danger" role="alert">
+  					<span th:text="${dangerDel}"></span>
+				</div>
+			
+        <form>
+                <div class="alert alert-primary" role="alert">
+                        Datos enviados exitosamente!<br>
+                        Un personal de la empresa se pondra en contacto con usted en un maximo de 24 horas
+                      </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputNombre">Nombre</label>
+              <input type="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputTelefono">Telefono</label>
+              <input type="telefono" class="form-control" id="inpuTelefono" placeholder="Telefono">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputCorreo">Correo electronico</label>
+            <input type="correo" class="form-control" id="inputCorreo" placeholder="ejemplo@ejemplo.com">
+          </div>
+		  
+		  
+		  
+          <div class="form-group">
+            <label for="inputMensaje">Mensaje</label>
+            <textarea type="text" class="form-control" id="inputMensaje" rows="5" placeholder="Introduzca mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button><br>
+          
+         
+        </form>
+
+			
+				
+
+		</div>
+
+	</div>
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

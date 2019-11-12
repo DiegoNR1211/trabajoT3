@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/offcanvas.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="css/servicio.css" rel="stylesheet" media="screen"/>
+
+<header th:replace="layout/layout :: header"></header>
+<div class="container">
+    <h1>PRECIOS Y PAQUETES</h1>  
+</div>
+        <h2>Conoce Nuestros paquetes</h2>
+        <p>Contamos con alquileres  para tu evento, ahorra contratando un paquete:</p>
+    
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header"> Video Pantallas</div>
+  <div class="card-body">
+    <h5 class="card-title"><sup>$</sup>900<sub>/evento</sub> </h5>
+     <h5 class="card-title"><small>Video Pantallas</small></h5>
+      <h5 class="card-title"><a class="signup-btn" th:href="@{/cotizacion}">CONTACTA PARA ALQUILAR</a></h5>
+  </div>
+  <div class="card-footer bg-transparent border-success"> <li>Proyector de 3000 lumenes SVGA y HDMI</li>
+                                <li>Incluye pantalla </li>
+                                <li>Manual y montaje para el proyector</li>
+  </div>
+      </div>   
+
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header"> PANTALLA DUAL</div>
+  <div class="card-body">
+    <h5 class="card-title"><sup>$</sup>2000<sub>/evento</sub> </h5>
+     <h5 class="card-title"><small>PANTALLAS LED HD</small></h5>
+      <h5 class="card-title"><a class="signup-btn" th:href="@{/cotizacion}">CONTACTA PARA ALQUILAR</a></h5>
+  </div>
+  <div class="card-footer bg-transparent border-success"> <li> 2 Pantallas LED de 42" </li>
+                                <li> con base de piso</li>
+                                <li> incluye instalación </li>
+                                <li> listo para su uso</li>
+                                <li> Nota: La distancia Máxima de cabina a pantalla es de 20 mts. de cable HDMI</li>
+  </div>
+      </div>   
+            
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">PANTALLA CUADRUPLE</div>
+  <div class="card-body">
+    <h5 class="card-title"><sup>$</sup>3500<sub>/evento</sub> </h5>
+     <h5 class="card-title"><small>4 PANTALLAS LED HD</small></h5>
+      <h5 class="card-title"><a class="signup-btn" th:href="@{/cotizacion}">CONTACTA PARA ALQUILAR</a></h5>
+  </div>
+  <div class="card-footer bg-transparent border-success"> <li>4 Pantallas LED de 42" </li>
+                                                        <li> con base de piso</li>
+                                <li> incluye instalación </li>
+                                <li> listo para su uso</li>
+                                <li> Nota: La distancia Máxima de cabina a pantalla es de 20 mts. de cable HDMI</li>
+  </div>
+      </div>            
+            
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Bafle amplificador</div>
+  <div class="card-body">
+    <h5 class="card-title"><sup>$</sup>750<sub>/evento</sub> </h5>
+     <h5 class="card-title"><small>Audio Bafle amplificador</small></h5>
+      <h5 class="card-title"><a class="signup-btn" th:href="@{/cotizacion}">CONTACTA PARA ALQUILAR</a></h5>
+  </div>
+  <div class="card-footer bg-transparent border-success"> <li>Bafle amplificador de 15" pulgadas </li>
+                                                         <li>Puertos USB y MIC</li>
+                                                         <li>Incluye tripie</li>
+  </div>
+</div>
+
+
+<!-- =========================================
+JAVASCRIPT
+========================================== --><script 
+                   th:src="@{/js/jquery-3.4.1.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/chosen.jquery.min.js}"></script>
+		<script th:src="@{/js/fontawesome.min.js}"></script>		
+		<script th:src="@{/js/sweetalert.min.js}"></script>
+</body>
+</html>
